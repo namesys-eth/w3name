@@ -68,7 +68,7 @@
     "@web-std/fetch": "^4.1.0",
     "cborg": "^1.9.4",
     "ipns": "^0.16.0",
-    "libp2p-crypto": "^0.21.2",
+    "libp2p-crypto": "^0.21.1",
     "throttled-queue": "^2.1.4",
     "uint8arrays": "^3.0.0"
   },
