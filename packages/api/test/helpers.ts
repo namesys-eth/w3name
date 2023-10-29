@@ -25,7 +25,7 @@ export async function createNameKeypair (): Promise<NameKeyPair> {
   return nameKeyPair
 }
 
-export async function createNameRecord (privKey: Uint8Array, value: string, seqno = 0n): Promise<Uint8Array> {
+export async function createNameRecord (privKey: Uint8Array, value: string, seqno = BigInt(0)): Promise<Uint8Array> {
   const privKeyObj = await keys.unmarshalPrivateKey(privKey)
   const peerId = await peerIdFromKeys(privKeyObj.public.bytes, privKeyObj.bytes)
   const entry = await ipns.create(peerId, uint8arrays.fromString(value), seqno, lifetime)
@@ -39,7 +39,7 @@ export async function updateNameRecord (privKey: Uint8Array, existingRecord: Uin
   const newEntry = await ipns.create(
     peerId,
     uint8arrays.fromString(newValue),
-    existingEntry.sequence + 1n,
+    existingEntry.sequence + BigInt(1),
     lifetime
   )
   return ipns.marshal(newEntry)

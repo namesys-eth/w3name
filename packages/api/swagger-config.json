@@ -1,13 +1,13 @@
 {
    "openapi": "3.0.2",
    "info": {
-      "title": "w3name API",
-      "description": "This documentation describes how to use our HTTP API for w3name.\n\nThis API will allow you to build applications that create and manage IPNS records. IPNS is short for InterPlanetary Name System and adds a new layer to the powerful content addressing that IPFS provides. w3name is a service that provides secure, stable identifiers for content addressable and mutable data (that changes over time).\n\nWhile you can interact with this API in a simple way using our JS client library, we also provide this API on its own for you to leverage in your application.\n\nThis API will allow you to create, update and retrieve a w3name record. However, in order to do this, you will first need to create key pair. You can do this for example through the IPNS CLI ([documentation here](https://docs.ipfs.tech/concepts/ipns/#example-ipns-setup-with-cli)).\n\n\nOnce you have created a key pair, you can create and sign an IPNS record that you will be able to use with our w3name API endpoint for publishing onto the DHTs.\n\n\n\n## API endpoint URL\n\nThe main public API endpoint URL for w3name is `https://name.web3.storage`. All endpoints described in this document should be made relative to this root URL. For example, to post to the `/name/:key` endpoint, send your request to `https://name.web3.storage/name/:key`.",
+      "title": "NameSys w3name API",
+      "description": "This documentation describes how to use our HTTP API for w3name.\n\nThis API will allow you to build applications that create and manage IPNS records. IPNS is short for InterPlanetary Name System and adds a new layer to the powerful content addressing that IPFS provides. w3name is a service that provides secure, stable identifiers for content addressable and mutable data (that changes over time).\n\nWhile you can interact with this API in a simple way using our JS client library, we also provide this API on its own for you to leverage in your application.\n\nThis API will allow you to create, update and retrieve a w3name record. However, in order to do this, you will first need to create key pair. You can do this for example through the IPNS CLI ([documentation here](https://docs.ipfs.tech/concepts/ipns/#example-ipns-setup-with-cli)).\n\n\nOnce you have created a key pair, you can create and sign an IPNS record that you will be able to use with our w3name API endpoint for publishing onto the DHTs.\n\n\n\n## API endpoint URL\n\nThe main public API endpoint URL for w3name is `https://w3name.namesys.storage`. All endpoints described in this document should be made relative to this root URL. For example, to post to the `/name/:key` endpoint, send your request to `https://w3name.namesys.storage/name/:key`.",
       "version": "1.0"
    },
    "servers": [
       {
-         "url": "https://name.web3.storage"
+         "url": "https://w3name.namesys.storage"
       }
    ],
    "tags": [

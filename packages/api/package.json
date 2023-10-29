@@ -1,20 +1,20 @@
 {
-  "name": "@w3name/api",
+  "name": "@namesys-w3name/api",
   "version": "1.2.2",
-  "description": "w3name api",
-  "author": "",
+  "description": "NameSys w3name API",
+  "author": "namesys",
   "directories": {
     "test": "test"
   },
   "private": true,
   "license": "Apache-2.0 OR MIT",
-  "homepage": "https://github.com/web3-storage/w3name#readme",
+  "homepage": "https://github.com/namesys-eth/w3name#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/web3-storage/w3name.git"
+    "url": "git+https://github.com/namesys-eth/w3name.git"
   },
   "bugs": {
-    "url": "https://github.com/web3-storage/w3name/issues"
+    "url": "https://github.com/namesys-eth/w3name/issues"
   },
   "keywords": [
     "w3name",
@@ -48,9 +48,10 @@
   "dependencies": {
     "@google-cloud/precise-date": "^3.0.0",
     "@web-std/fetch": "^4.1.0",
-    "ipns": "^1.0.1",
+    "ipns": "^6.0.1",
     "itty-router": "^2.6.1",
-    "libp2p-crypto": "^0.21.2",
+    "libp2p": "^0.46.4",
+    "libp2p-crypto": "^0.21.1",
     "p-defer": "^4.0.0",
     "sinon": "^14.0.0",
     "toucan-js": "^2.6.1",

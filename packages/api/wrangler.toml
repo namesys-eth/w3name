@@ -1,6 +1,6 @@
-name = "w3name"
+name = "namesys-w3name"
 main = "dist/index.mjs"
-compatibility_date = "2022-06-10"
+compatibility_date = "2023-10-16"
 
 [build]
 command = "npm run build"
@@ -19,15 +19,14 @@ new_classes = ["NameRoom0", "IPNSRecord"]
 
 [vars]
 REBROADCAST_INTERVAL_MS = "600000"
-PUBLISHER_ENDPOINT_URL = "http://127.0.0.1:8000"
-PUBLISHER_AUTH_SECRET = "123456"
+PUBLISHER_ENDPOINT_URL = "http://localhost:8000" # http://95.217.178.38 | https://pub.namesys.xyz:8000
+PUBLISHER_AUTH_SECRET = "hellonamesys"
 
 # Test
-
 [env.test.vars]
 REBROADCAST_INTERVAL_MS = "500"
-PUBLISHER_ENDPOINT_URL = "http://127.0.0.1:8000"
-PUBLISHER_AUTH_SECRET = "123456"
+PUBLISHER_ENDPOINT_URL = "http://localhost:8000" # http://95.217.178.38 | https://pub.namesys.xyz:8000
+PUBLISHER_AUTH_SECRET = "hellonamesys"
 
 [env.test.durable_objects]
   bindings = [
@@ -36,11 +35,10 @@ PUBLISHER_AUTH_SECRET = "123456"
   ]
 
 # Staging
-
 [env.staging]
-account_id = "fffa4b4363a7e5250af8357087263b3a" # Protocol Labs CF account
+account_id = "892973ecf5177f94c0bc003d89f498b6" # NameSys CF account
 routes = [
-  { pattern = "https://name-staging.web3.storage/*", zone_id = "7eee3323c1b35b6650568604c65f441e" }
+  { pattern = "https://stage.namesys.xyz/*", zone_id = "6d058d8a7f0f52bd3bfc840a638f5199" }
 ]
 vars = { ENV = "staging", REBROADCAST_INTERVAL_MS = "86400000" }
 [env.staging.durable_objects]
@@ -50,11 +48,10 @@ vars = { ENV = "staging", REBROADCAST_INTERVAL_MS = "86400000" }
   ]
 
 # Production
-
 [env.production]
-account_id = "fffa4b4363a7e5250af8357087263b3a" # Protocol Labs CF account
+account_id = "892973ecf5177f94c0bc003d89f498b6" # NameSys CF account
 routes = [
-  { pattern = "https://name.web3.storage/*", zone_id = "7eee3323c1b35b6650568604c65f441e" }
+  { pattern = "https://ipns.namesys.xyz/*", zone_id = "6d058d8a7f0f52bd3bfc840a638f5199" }
 ]
 vars = { ENV = "production", REBROADCAST_INTERVAL_MS = "86400000" }
 [env.production.durable_objects]

@@ -12,7 +12,7 @@ export interface IPNSRecordData {
 
 const REBROADCAST_INTERVAL_MS = 12 * 60 * 60 * 1000
 const PUBLISHER_ENDPOINT_URL = 'http://localhost:8000'
-const PUBLISHER_AUTH_SECRET = '123456'
+const PUBLISHER_AUTH_SECRET = 'hellonamesys'
 
 export function canOverwrite (current: IPNSRecordData, candidate: IPNSRecordData): boolean {
   // Logic copied from https://github.com/ipfs/go-ipns/blob/a8379aa25ef287ffab7c5b89bfaad622da7e976d/ipns.go#L325
