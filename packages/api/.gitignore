@@ -1,3 +1,4 @@
 dist
 coverage
 .mf
+wrangler.toml

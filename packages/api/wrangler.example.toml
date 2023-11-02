@@ -19,13 +19,13 @@ new_classes = ["NameRoom0", "IPNSRecord"]
 
 [vars]
 REBROADCAST_INTERVAL_MS = "600000"
-PUBLISHER_ENDPOINT_URL = "http://localhost:8000" # http://95.217.178.38 | https://pub.namesys.xyz:8000
+PUBLISHER_ENDPOINT_URL = "https://ipfs.namesys.xyz:8000"
 PUBLISHER_AUTH_SECRET = "hellonamesys"
 
 # Test
 [env.test.vars]
 REBROADCAST_INTERVAL_MS = "500"
-PUBLISHER_ENDPOINT_URL = "http://localhost:8000" # http://95.217.178.38 | https://pub.namesys.xyz:8000
+PUBLISHER_ENDPOINT_URL =  "https://ipfs.namesys.xyz:8000"
 PUBLISHER_AUTH_SECRET = "hellonamesys"
 
 [env.test.durable_objects]
