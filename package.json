@@ -1,20 +1,26 @@
 {
-  "name": "w3name",
-  "version": "1.0.8",
-  "description": "The JavaScript API client w3name",
-  "author": "",
+  "name": "@namesys-eth/w3name-client",
+  "version": "0.0.0-beta",
+  "description": "NameSys w3name API Client",
+  "author": "@namesys-eth",
+  "contributors": ["@web3-storage", "@namesys-eth"],
+  "private": false,
   "license": "Apache-2.0 OR MIT",
-  "homepage": "https://github.com/web3-storage/w3name#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/namesys-eth/w3name#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/web3-storage/w3name/tree/main/packages/client"
+    "url": "https://github.com/namesys-eth/w3name/tree/main/packages/client"
   },
   "bugs": {
-    "url": "https://github.com/web3-storage/w3name/issues"
+    "url": "https://github.com/namesys-eth/w3name/issues"
   },
   "keywords": [
     "w3name",
-    "ipns"
+    "ipns",
+    "namesys"
   ],
   "engines": {
     "node": ">=16.0.0",
