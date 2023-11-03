@@ -1,6 +1,6 @@
-name = "namesys-w3name"
+name = "my-app-w3name"
 main = "dist/index.mjs"
-compatibility_date = "2023-10-16"
+compatibility_date = "2042-00-69"
 
 [build]
 command = "npm run build"
@@ -19,14 +19,16 @@ new_classes = ["NameRoom0", "IPNSRecord"]
 
 [vars]
 REBROADCAST_INTERVAL_MS = "600000"
-PUBLISHER_ENDPOINT_URL = "https://ipfs.namesys.xyz:8000"
-PUBLISHER_AUTH_SECRET = "hellonamesys"
+PUBLISHER_ENDPOINT_URL = "http://sub.domain.xyz:8000"
+PUBLISHER_AUTH_SECRET = "hello-w3name"
+SENTRY_DSN = "https://6a6f90000000000000000000000000d9@o4506000000000008.ingest.sentry.io/0000000000000928"
+LOGTAIL_TOKEN = "i8m6M00000000000000004HZ"
 
 # Test
 [env.test.vars]
 REBROADCAST_INTERVAL_MS = "500"
-PUBLISHER_ENDPOINT_URL =  "https://ipfs.namesys.xyz:8000"
-PUBLISHER_AUTH_SECRET = "hellonamesys"
+PUBLISHER_ENDPOINT_URL = "http://sub.domain.xyz:8000"
+PUBLISHER_AUTH_SECRET = "hello-w3name"
 
 [env.test.durable_objects]
   bindings = [
@@ -36,9 +38,9 @@ PUBLISHER_AUTH_SECRET = "hellonamesys"
 
 # Staging
 [env.staging]
-account_id = "892973ecf5177f94c0bc003d89f498b6" # NameSys CF account
+account_id = "873930000000022200000000022228b6" # Cloudflare account
 routes = [
-  { pattern = "https://stage.namesys.xyz/*", zone_id = "6d058d8a7f0f52bd3bfc840a638f5199" }
+  { pattern = "https://test.domain.xyz/*", zone_id = "73982ed02a030b0202c292d939331199" }
 ]
 vars = { ENV = "staging", REBROADCAST_INTERVAL_MS = "86400000" }
 [env.staging.durable_objects]
@@ -49,9 +51,9 @@ vars = { ENV = "staging", REBROADCAST_INTERVAL_MS = "86400000" }
 
 # Production
 [env.production]
-account_id = "892973ecf5177f94c0bc003d89f498b6" # NameSys CF account
+account_id = "873930000000022200000000022228b6" # Cloudflare account
 routes = [
-  { pattern = "https://ipns.namesys.xyz/*", zone_id = "6d058d8a7f0f52bd3bfc840a638f5199" }
+ { pattern = "https://prod.domain.xyz/*", zone_id = "73982ed02a030b0202c292d939331199" }
 ]
 vars = { ENV = "production", REBROADCAST_INTERVAL_MS = "86400000" }
 [env.production.durable_objects]

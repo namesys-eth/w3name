@@ -27,7 +27,7 @@ export default class W3NameService implements PublicService {
   waitForRateLimit: RateLimiter
 
   constructor (
-    endpoint: URL = new URL('https://name.web3.storage/'),
+    endpoint: URL = new URL('https://stage.namesys.xyz/'),
     waitForRateLimit: RateLimiter = createRateLimiter()
   ) {
     this.endpoint = endpoint

@@ -1,13 +1,17 @@
 {
-  "name": "@namesys-w3name/api",
-  "version": "1.2.2",
-  "description": "NameSys w3name API",
-  "author": "namesys",
+  "name": "@namesys-eth/w3name-api",
+  "version": "0.1.0-beta",
+  "description": "NameSys w3name Cloudflare Worker API",
+  "author": "@namesys-eth",
+  "contributors": ["@web3-storage", "@namesys-eth"],
   "directories": {
     "test": "test"
   },
-  "private": true,
+  "private": false,
   "license": "Apache-2.0 OR MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "homepage": "https://github.com/namesys-eth/w3name#readme",
   "repository": {
     "type": "git",
@@ -18,7 +22,8 @@
   },
   "keywords": [
     "w3name",
-    "ipns"
+    "ipns",
+    "namesys"
   ],
   "engines": {
     "node": ">=16.0.0",

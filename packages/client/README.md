@@ -1,3 +1,7 @@
+❗ This is a fork of [`@web3-storage/w3name`](https://github.com/web3-storage/w3name) serving [`@namesys-eth/w3name-client`](https://github.com/namesys-eth/w3name-client). Please replace `w3name` with `@namesys-eth/w3name-client` wherever appropriate and/or necessary throughout the documentation.
+
+---
+
 <h1 align="center">⁂<br/>w3name</h1>
 <p align="center">The JavaScript API client for <a href="https://web3.storage/products/w3name/">w3name</a></p>
 
