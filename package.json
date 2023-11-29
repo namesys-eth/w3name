@@ -12,7 +12,9 @@
   "scripts": {
     "start": "npm run dev -w packages/api",
     "prepare": "husky install",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "stage": "git add ./packages/client/dist && git commit -S -m 'auto-commit: stage' && git subtree push --prefix packages/client/dist origin stage",
+    "prod": "git add ./packages/client/dist && git commit -S -m 'auto-commit: prod' && git subtree push --prefix packages/client/dist origin prod"
   },
   "devDependencies": {
     "husky": "^8.0.3",
